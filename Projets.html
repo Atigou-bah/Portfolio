@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<header>
+  <header>
+    <nav class="navbar dark-mode" role="navigation">
+      <div class="navbar__logo">ATIGOU</div>    
+      <ul class="navbar__links">
+        <li class="navbar__link first"><a href="home.html">HOME</a></li>
+        <li class="navbar__link second"><a href="Skills.html">SKILLS</a></li>
+        <li class="navbar__link third"><a href="Projets.html">PROJETS</a></li>
+      </ul>   
+      <button class="burger">
+        <span class="bar"></span>  
+      </button>   
+    </nav>
+    <script>
+      function toggleMenu () {  
+    const navbar = document.querySelector('.navbar');
+    const burger = document.querySelector('.burger');
+    
+    burger.addEventListener('click', (e) => {    
+      navbar.classList.toggle('show-nav');
+    });    
+    // bonus
+    const navbarLinks = document.querySelectorAll('.navbar a');
+    navbarLinks.forEach(link => {
+      link.addEventListener('click', (e) => {    
+        navbar.classList.toggle('show-nav');
+      }); 
+    })
+     
+  }
+  toggleMenu();
+    </script>
+</header>
+<body>
+    <div class="projet">
+      <h1>My Projects</h1>
+    </div>
+    <div class="container-projet">
+      <div class="img-projet">
+        <h2>Jeu RUNNER </h2>
+        <img src="img/runner.png" alt="" class="image_projet">
+        <a href="https://runnerjs.surge.sh/"><h3>Voir le projet</h3></a>
+        <p>
+          Ce jeu runner en JavaScript propose un gameplay où le personnage court sans cesse vers 
+          la droite, le joueur doit sauter et éviter les obstacles pour marquer des points. 
+          Les graphismes colorés et la bande-son rythmée offrent une expérience de jeu immersive.
+          <br>
+          <br>
+        </p>
+      </div>
+      <div class="img-projet">
+        <h2>Jeu RPG Console </h2>
+        <img src="img/Rpg-console.png" alt="" class="image_projet">
+        <a href="https://github.com/Atigou-bah/Rpg-Python"><h3>Voir le projet</h3></a>
+        <p>
+          Ce RPG sur console créé en Python propose une histoire immersive avec des choix de dialogues et de quêtes. 
+          Le joueur peut explorer un vaste monde ouvert, combattre des ennemisavec des mécanismes de combat stratégiques 
+          et développer son personnage avec des compétences et des équipements.
+        </p>
+      </div>
+      <div class="img-projet">
+        <h2>Bot-Discord </h2>
+        <img src="img/bot-discord.jpg" alt="" class="image_projet">
+        <a href="https://github.com/Atigou-bah/bot_discord"><h3>Voir le projet</h3></a>
+         <p>
+          Ce bot Discord, développé en Python, propose un jeu de quiz interactif avec plusieurs catégories de questions. 
+          Les joueurs peuvent répondre à des questions à choix multiples, gagner des points en fonction du nombre 
+          de bonnes réponses fournies et ainsi obtenir une recompense
+         <br>
+         <br>
+        </p>
+      </div>
+      <div class="img-projet">
+        <h2>Portfolio </h2>
+        <img src="img/Portfolio.png" alt="" class="image_projet">
+        <a href="#"><h3>Voir le projet</h3></a>
+         <p> la réalisation de ce portfolio en front-end avait pour but de mettre en avant mes compétences, montrer 
+          les projets auxquels j'ai assisté ou accompli de façon autonome et également de montrer mon engagement envers l'excellence
+          pour la réussite de mes études en Développement web | Data & IA
+         </p>
+      </div>
+      <div class="img-projet">
+        <h2>Future Projet </h2>
+        <img src="img/waiting.jpg" alt="" class="image_projet">
+        <a href="#"><h3>Voir le projet</h3></a>
+        <p>description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio, aliquam, quisquam velit officia rerum, dignissimos suscipit quasi molestiae quas veniam facere ipsum dolorum sapiente earum nesciunt! Praesentium doloremque fuga quis?</p>
+      </div>
+    </div>
+</body>
+</html>

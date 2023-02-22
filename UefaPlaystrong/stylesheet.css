@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'UEFA Playstrong';
+    src: url('UEFAPlaystrong-Light.eot');
+    src: local('UEFA Playstrong Light'), local('UEFAPlaystrong-Light'),
+        url('UEFAPlaystrong-Light.eot?#iefix') format('embedded-opentype'),
+        url('UEFAPlaystrong-Light.woff2') format('woff2'),
+        url('UEFAPlaystrong-Light.woff') format('woff'),
+        url('UEFAPlaystrong-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UEFA Playstrong';
+    src: url('UEFAPlaystrong-Bold.eot');
+    src: local('UEFA Playstrong Bold'), local('UEFAPlaystrong-Bold'),
+        url('UEFAPlaystrong-Bold.eot?#iefix') format('embedded-opentype'),
+        url('UEFAPlaystrong-Bold.woff2') format('woff2'),
+        url('UEFAPlaystrong-Bold.woff') format('woff'),
+        url('UEFAPlaystrong-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UEFA Playstrong';
+    src: url('UEFAPlaystrong-Medium.eot');
+    src: local('UEFA Playstrong Medium'), local('UEFAPlaystrong-Medium'),
+        url('UEFAPlaystrong-Medium.eot?#iefix') format('embedded-opentype'),
+        url('UEFAPlaystrong-Medium.woff2') format('woff2'),
+        url('UEFAPlaystrong-Medium.woff') format('woff'),
+        url('UEFAPlaystrong-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'UEFA Playstrong';
+    src: url('UEFAPlaystrong.eot');
+    src: local('UEFA Playstrong'), local('UEFAPlaystrong'),
+        url('UEFAPlaystrong.eot?#iefix') format('embedded-opentype'),
+        url('UEFAPlaystrong.woff2') format('woff2'),
+        url('UEFAPlaystrong.woff') format('woff'),
+        url('UEFAPlaystrong.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

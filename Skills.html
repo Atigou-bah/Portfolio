@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!--  <link rel="stylesheet" href="Style_Skill.css">-->
+   <link rel="stylesheet" href="style.css">
+    <title>SKILLS</title>
+</head>
+<header>
+    <nav class="navbar dark-mode" role="navigation">
+        <div class="navbar__logo">ATIGOU</div>    
+        <ul class="navbar__links">
+          <li class="navbar__link first"><a href="home.html">HOME</a></li>
+          <li class="navbar__link second"><a href="Skills.html">SKILLS</a></li>
+          <li class="navbar__link third"><a href="Projets.html">PROJETS</a></li>
+        </ul>   
+        <button class="burger">
+          <span class="bar"></span>  
+        </button>   
+      </nav>
+      <script>
+        function toggleMenu () {  
+      const navbar = document.querySelector('.navbar');
+      const burger = document.querySelector('.burger');
+      
+      burger.addEventListener('click', (e) => {    
+        navbar.classList.toggle('show-nav');
+      });    
+      // bonus
+      const navbarLinks = document.querySelectorAll('.navbar a');
+      navbarLinks.forEach(link => {
+        link.addEventListener('click', (e) => {    
+          navbar.classList.toggle('show-nav');
+        }); 
+      })
+       
+    }
+    toggleMenu();
+      </script>
+</header>
+<body>
+    <div class="inner">
+        <div class="header-skills">
+            <h1> My SKILLS</h1>
+        </div>
+        <div class="container-Skills">
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="img/html5.png" alt="html's picture" class="img_icon">
+                    </div>
+                    <h3>HTML 5</h3>
+                </div>
+            <p>J'ai une compréhension solide des balises et
+                des attributs HTML,ce qui me permet de créer des pages web bien conçues 
+                et facilement compréhensibles.</p>
+                <br>
+                <br>            
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="img/Css.png" alt="css's picture" class="img_icon">
+                    </div>
+                    <h3>CSS</h3>
+                </div>
+            <p>J'ai une bonne compréhension des propriétés CSS de bases telles que la couleur,
+                la police,la taille,les selecteurset le positionnement.En outre, je suis très à l'aise avec l'utilisation des frameworks tels que Bootstrap.</p>
+
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="img/JavaScript.png" alt="JavaScript's picture" class="img_icon">
+                    </div>
+                    <h3>JavaScript</h3>
+                </div>
+            <p>J'ai de solides connaissances en Javascript, je peux écrire des scripts simples et comprendre 
+                les concepts de base du langage.Je m'exerce de façon continue pour maîtriser des fonctionnalités
+                 plus avancées et complexes</p>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="img/Java.png" alt="Java's picture" class="img_icon" >
+                    </div>
+                    <h3>Java</h3>
+                </div>
+            <p>J'ai de solides connaissances en Java, je peux écrire des scripts simples et comprendre 
+                les concepts de base du langage.Je m'exerce de façon continue pour maîtriser des fonctionnalités
+                 plus avancées et et la programmation orientée objet
+                <br>
+                <br> 
+                <br></p>
+            </div> 
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="img/php.png" alt="php's picture" class="img_icon">
+                    </div>
+                    <h3>PHP</h3>
+                </div>
+            <p>J'ai de solides connaissances en PHP, je peux écrire des scripts simples et comprendre 
+                les concepts de base du langage.Je m'exerce de façon continue pour maîtriser des fonctionnalités
+                 plus avancées et complexes telles que la gestion des bases de données et la création d'applications web dynamiques.</p>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="img/sql.png" alt="sql's picture" class="img_icon">
+                    </div>
+                    <h3>SQL</h3>
+                </div>
+            <p>Je possède des compétences solides en SQL. Je suis capable d'écrire des requêtes 
+                simples et complexes et de concevoir des bases de données relationnelles efficaces
+                 pour répondre aux besoins des utilisateurs.
+                 <br>
+                 <br> 
+                 <br></p>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="img/Python.png" alt="Python's picture" class="img_icon">
+                    </div>
+                    <h3>PYTHON</h3>
+                </div>
+            <p>J'ai de solides connaissances en Python, je peux écrire des scripts simples et comprendre 
+                les concepts de base du langage.Je m'exerce de façon continue pour maîtriser des fonctionnalités
+                 plus avancées et complexes 
+                <br>
+                 <br>
+                </p>
+            </div>
+            <div class="skill-box">
+                <div class="skill-title">
+                    <div class="img">
+                        <img src="img/react.png" alt="R's picture" class="img_icon" >
+                    </div>
+                    <h3>REACT</h3>
+                </div>
+            <p>J'ai une bonne compréhension des notions de
+                 base et une expérience pratique du développement de projets relativement simples. Cependant,
+                  je pourrais avoir besoin d'un peu plus de pratique et d'expérience pour maîtriser certains aspects plus avancés de React..</p>
+            </div>           
+     
+        </div>
+</body>
+</html>
