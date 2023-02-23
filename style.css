@@ -43,14 +43,14 @@ a:hover::before {
 }
 
 .Texte{
-    padding-left: 7%;
-    padding-top: 7%;
-    font-size: 20px;
+  padding-left: 7%;
+  padding-top: 7%;
+  font-size: 20px;
 }
 .alternance{
-    padding-left: 7%;
-    padding-top: 0%;
-    font-size: 20px;
+  padding-left: 7%;
+  padding-top: 0%;
+   font-size: 20px;
 } 
 .Atigou2{
     display: flex;
@@ -64,9 +64,10 @@ a:hover::before {
     
 }
 .Texte2{
-    padding-left: 30%;
-    padding-top: 1%;
-    font-size: 22px;
+  padding-left: 4%;
+  padding-top: 1%;
+    font-size: 20px;
+    margin-right: 450px;
     
 }
 #typewrite {
@@ -75,7 +76,7 @@ a:hover::before {
      white-space: nowrap; 
     animation: typing 3s steps(40, end);
     padding-left: 7%;
-  }
+    }
   
 @keyframes typing {
     from { 
@@ -105,18 +106,24 @@ p{
     float: left;
 }
 .container{
-    display: flex;
-    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    
 }
-.box {
-    width: 50%;
-    padding: 10px;
-    box-sizing: border-box;  
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: calc(50% - 1px);
+  border-left: 1px solid #fff;
 }
 .left {
-    border-right: 1px solid #ccc;
+    width: 100vh;
+    margin-left: 25px;
+}
 
-  }
 hr{
     border-right: 1px solid #ccc;
 }
@@ -129,11 +136,14 @@ hr{
     border-color: red;
     display: flex;
     justify-content: flex-end;
-    margin-left: 72%;
+    margin-left: 50%;
 }
 .Clearfix{
     margin-top: 10%;
     margin-left: 3%;
+}
+.Clearfix h1{
+  padding-left: 4%;
 }
 input{
     border: solid 1.5px;
@@ -154,27 +164,32 @@ label{
   margin-bottom: 1px;
 }
 @media screen and (max-width: 800px) { 
+
   .container{
-    display: flex;
-    height: 100vh;
-} 
-  .box {
-    width: 100%;
-    box-sizing: border-box; 
-    float: none;
+   display: grid;
+   grid-template-columns: 1fr;
+  }
+  .container::before{
+    display: none;
   }
   footer{
    display: flex;
    justify-content: center;
-   width: 100vh;
   }
   .Texte2{
-    width: 100vh;
+    width: 378px;
+    padding-left: 3%;
+    font-size: 17px;
+
   }
-  .alternance{
-    width: 100vh;
-  }
+.right{
+  padding-left: 4%;
 }
+  .alternance{
+    width: 378px;
+    font-size: 17px;
+  }
+
   #typewrite {
     font-size: 25px;
     overflow: hidden;
@@ -182,6 +197,8 @@ label{
     animation: typing 3s steps(40, end);
     padding-left: 7%;
   }
+}
+
 #nav {
     display: flex;
   }
