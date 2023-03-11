@@ -163,7 +163,7 @@ label{
   flex-direction: column;
   margin-bottom: 1px;
 }
-@media screen and (max-width: 800px) { 
+@media screen and (max-width: 600px) { 
 
   .container{
    display: grid;
