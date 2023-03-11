@@ -186,6 +186,14 @@ label{
   padding-left: 4%;
   width: 378px;
 }
+.button1{
+  border-radius: 10px;
+  border-color: red;
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 42%;
+
+}
   .alternance{
     width: 378px;
     font-size: 17px;
